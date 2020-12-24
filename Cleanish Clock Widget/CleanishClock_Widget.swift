@@ -45,7 +45,7 @@ struct SimpleWidgetEntryView: View {
         
     static let timeFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "H:mm a"
+        formatter.dateFormat = "H:mm"
         return formatter
     }()
     
@@ -55,31 +55,6 @@ struct SimpleWidgetEntryView: View {
         return formatter
     }()
     
-    func getTextSize() -> CGFloat {
-        switch self.widgetFamily {
-        case .systemSmall:
-            return 28.0
-        case .systemLarge:
-            return 72.0
-        case .systemMedium:
-            return 68.0
-        @unknown default:
-            return 64.0
-        }
-    }
-    
-    func getSubtitleTextSize() -> CGFloat {
-        switch self.widgetFamily {
-        case .systemSmall:
-            return 28.0
-        case .systemLarge:
-            return 72.0
-        case .systemMedium:
-            return 24.0
-        @unknown default:
-            return 64.0
-        }
-    }
     
     func getFormattedTime(entry: SimpleEntry) -> String {
         return Self.timeFormatter.string(from: entry.date).lowercased()
@@ -94,11 +69,11 @@ struct SimpleWidgetEntryView: View {
         ZStack {
             VStack {
             Text("\(self.getFormattedTime(entry: entry))")
-                .font(.custom("Roboto Light", size: self.getTextSize(), relativeTo: .largeTitle))
+                .font(.custom("Roboto Light", size: 68.0, relativeTo: .largeTitle))
                 .tracking(-1.5)
                 .foregroundColor(Color("PrimaryClockColor"))
             Text("\(self.getFormattedDate(entry: entry))")
-                .font(.custom("Roboto Light", size: self.getSubtitleTextSize(), relativeTo: .title))
+                .font(.custom("Roboto Light", size: 24.0, relativeTo: .title))
                 .foregroundColor(Color("SecondaryClockColor"))
             }
         }
