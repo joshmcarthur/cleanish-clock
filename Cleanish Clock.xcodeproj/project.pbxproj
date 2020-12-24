@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031EF0AD2592E82C00FD29FA /* Cleanish_ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0AC2592E82C00FD29FA /* Cleanish_ClockApp.swift */; };
+		031EF0AF2592E82C00FD29FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0AE2592E82C00FD29FA /* ContentView.swift */; };
+		031EF0B12592E83100FD29FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0B02592E83100FD29FA /* Assets.xcassets */; };
+		031EF0B42592E83100FD29FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0B32592E83100FD29FA /* Preview Assets.xcassets */; };
+		031EF0BF2592E83200FD29FA /* Cleanish_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0BE2592E83200FD29FA /* Cleanish_ClockTests.swift */; };
+		031EF0CA2592E83200FD29FA /* Cleanish_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0C92592E83200FD29FA /* Cleanish_ClockUITests.swift */; };
+		031EF0DB2592E84C00FD29FA /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */; };
+		031EF0E62592F45300FD29FA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EF0E52592F45300FD29FA /* WidgetKit.framework */; };
+		031EF0E82592F45300FD29FA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EF0E72592F45300FD29FA /* SwiftUI.framework */; };
+		031EF0EB2592F45300FD29FA /* CleanishClock_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0EA2592F45300FD29FA /* CleanishClock_Widget.swift */; };
+		031EF0F12592F45A00FD29FA /* Cleanish Clock WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 031EF0E32592F45300FD29FA /* Cleanish Clock WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		031EF1032593387700FD29FA /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */; };
+		031EF1082593396400FD29FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0B02592E83100FD29FA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		031EF0BB2592E83200FD29FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 031EF0A12592E82B00FD29FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031EF0A82592E82C00FD29FA;
+			remoteInfo = "Prominent Clock";
+		};
+		031EF0C62592E83200FD29FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 031EF0A12592E82B00FD29FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031EF0A82592E82C00FD29FA;
+			remoteInfo = "Prominent Clock";
+		};
+		031EF0EF2592F45A00FD29FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 031EF0A12592E82B00FD29FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031EF0E22592F45300FD29FA;
+			remoteInfo = "Prominent Clock WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		031EF0F52592F45A00FD29FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				031EF0F12592F45A00FD29FA /* Cleanish Clock WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		031EF0A92592E82C00FD29FA /* Cleanish Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cleanish Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031EF0AC2592E82C00FD29FA /* Cleanish_ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleanish_ClockApp.swift; sourceTree = "<group>"; };
+		031EF0AE2592E82C00FD29FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		031EF0B02592E83100FD29FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		031EF0B32592E83100FD29FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		031EF0B52592E83100FD29FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031EF0BA2592E83200FD29FA /* Cleanish ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cleanish ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031EF0BE2592E83200FD29FA /* Cleanish_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleanish_ClockTests.swift; sourceTree = "<group>"; };
+		031EF0C02592E83200FD29FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031EF0C52592E83200FD29FA /* Cleanish ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cleanish ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031EF0C92592E83200FD29FA /* Cleanish_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleanish_ClockUITests.swift; sourceTree = "<group>"; };
+		031EF0CB2592E83200FD29FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		031EF0E32592F45300FD29FA /* Cleanish Clock WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cleanish Clock WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031EF0E52592F45300FD29FA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		031EF0E72592F45300FD29FA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		031EF0EA2592F45300FD29FA /* CleanishClock_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanishClock_Widget.swift; sourceTree = "<group>"; };
+		031EF0EE2592F45A00FD29FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		031EF0A62592E82C00FD29FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0B72592E83200FD29FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0C22592E83200FD29FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0E02592F45300FD29FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031EF0E82592F45300FD29FA /* SwiftUI.framework in Frameworks */,
+				031EF0E62592F45300FD29FA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031EF0A02592E82B00FD29FA = {
+			isa = PBXGroup;
+			children = (
+				031EF0AB2592E82C00FD29FA /* Cleanish Clock */,
+				031EF0BD2592E83200FD29FA /* Cleanish ClockTests */,
+				031EF0C82592E83200FD29FA /* Cleanish ClockUITests */,
+				031EF0E92592F45300FD29FA /* Cleanish Clock Widget */,
+				031EF0E42592F45300FD29FA /* Frameworks */,
+				031EF0AA2592E82C00FD29FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		031EF0AA2592E82C00FD29FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				031EF0A92592E82C00FD29FA /* Cleanish Clock.app */,
+				031EF0BA2592E83200FD29FA /* Cleanish ClockTests.xctest */,
+				031EF0C52592E83200FD29FA /* Cleanish ClockUITests.xctest */,
+				031EF0E32592F45300FD29FA /* Cleanish Clock WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		031EF0AB2592E82C00FD29FA /* Cleanish Clock */ = {
+			isa = PBXGroup;
+			children = (
+				031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */,
+				031EF0AC2592E82C00FD29FA /* Cleanish_ClockApp.swift */,
+				031EF0AE2592E82C00FD29FA /* ContentView.swift */,
+				031EF0B02592E83100FD29FA /* Assets.xcassets */,
+				031EF0B52592E83100FD29FA /* Info.plist */,
+				031EF0B22592E83100FD29FA /* Preview Content */,
+			);
+			path = "Cleanish Clock";
+			sourceTree = "<group>";
+		};
+		031EF0B22592E83100FD29FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				031EF0B32592E83100FD29FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		031EF0BD2592E83200FD29FA /* Cleanish ClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				031EF0BE2592E83200FD29FA /* Cleanish_ClockTests.swift */,
+				031EF0C02592E83200FD29FA /* Info.plist */,
+			);
+			path = "Cleanish ClockTests";
+			sourceTree = "<group>";
+		};
+		031EF0C82592E83200FD29FA /* Cleanish ClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				031EF0C92592E83200FD29FA /* Cleanish_ClockUITests.swift */,
+				031EF0CB2592E83200FD29FA /* Info.plist */,
+			);
+			path = "Cleanish ClockUITests";
+			sourceTree = "<group>";
+		};
+		031EF0E42592F45300FD29FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				031EF0E52592F45300FD29FA /* WidgetKit.framework */,
+				031EF0E72592F45300FD29FA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		031EF0E92592F45300FD29FA /* Cleanish Clock Widget */ = {
+			isa = PBXGroup;
+			children = (
+				031EF0EA2592F45300FD29FA /* CleanishClock_Widget.swift */,
+				031EF0EE2592F45A00FD29FA /* Info.plist */,
+			);
+			path = "Cleanish Clock Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		031EF0A82592E82C00FD29FA /* Cleanish Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031EF0CE2592E83200FD29FA /* Build configuration list for PBXNativeTarget "Cleanish Clock" */;
+			buildPhases = (
+				031EF0A52592E82C00FD29FA /* Sources */,
+				031EF0A62592E82C00FD29FA /* Frameworks */,
+				031EF0A72592E82C00FD29FA /* Resources */,
+				031EF0F52592F45A00FD29FA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				031EF0F02592F45A00FD29FA /* PBXTargetDependency */,
+			);
+			name = "Cleanish Clock";
+			productName = "Prominent Clock";
+			productReference = 031EF0A92592E82C00FD29FA /* Cleanish Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		031EF0B92592E83200FD29FA /* Cleanish ClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031EF0D12592E83200FD29FA /* Build configuration list for PBXNativeTarget "Cleanish ClockTests" */;
+			buildPhases = (
+				031EF0B62592E83200FD29FA /* Sources */,
+				031EF0B72592E83200FD29FA /* Frameworks */,
+				031EF0B82592E83200FD29FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				031EF0BC2592E83200FD29FA /* PBXTargetDependency */,
+			);
+			name = "Cleanish ClockTests";
+			productName = "Prominent ClockTests";
+			productReference = 031EF0BA2592E83200FD29FA /* Cleanish ClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		031EF0C42592E83200FD29FA /* Cleanish ClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031EF0D42592E83200FD29FA /* Build configuration list for PBXNativeTarget "Cleanish ClockUITests" */;
+			buildPhases = (
+				031EF0C12592E83200FD29FA /* Sources */,
+				031EF0C22592E83200FD29FA /* Frameworks */,
+				031EF0C32592E83200FD29FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				031EF0C72592E83200FD29FA /* PBXTargetDependency */,
+			);
+			name = "Cleanish ClockUITests";
+			productName = "Prominent ClockUITests";
+			productReference = 031EF0C52592E83200FD29FA /* Cleanish ClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		031EF0E22592F45300FD29FA /* Cleanish Clock WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031EF0F22592F45A00FD29FA /* Build configuration list for PBXNativeTarget "Cleanish Clock WidgetExtension" */;
+			buildPhases = (
+				031EF0DF2592F45300FD29FA /* Sources */,
+				031EF0E02592F45300FD29FA /* Frameworks */,
+				031EF0E12592F45300FD29FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cleanish Clock WidgetExtension";
+			productName = "Prominent Clock WidgetExtension";
+			productReference = 031EF0E32592F45300FD29FA /* Cleanish Clock WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		031EF0A12592E82B00FD29FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					031EF0A82592E82C00FD29FA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					031EF0B92592E83200FD29FA = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 031EF0A82592E82C00FD29FA;
+					};
+					031EF0C42592E83200FD29FA = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 031EF0A82592E82C00FD29FA;
+					};
+					031EF0E22592F45300FD29FA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 031EF0A42592E82B00FD29FA /* Build configuration list for PBXProject "Cleanish Clock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 031EF0A02592E82B00FD29FA;
+			productRefGroup = 031EF0AA2592E82C00FD29FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				031EF0A82592E82C00FD29FA /* Cleanish Clock */,
+				031EF0B92592E83200FD29FA /* Cleanish ClockTests */,
+				031EF0C42592E83200FD29FA /* Cleanish ClockUITests */,
+				031EF0E22592F45300FD29FA /* Cleanish Clock WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		031EF0A72592E82C00FD29FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031EF0B42592E83100FD29FA /* Preview Assets.xcassets in Resources */,
+				031EF0B12592E83100FD29FA /* Assets.xcassets in Resources */,
+				031EF0DB2592E84C00FD29FA /* Roboto-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0B82592E83200FD29FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0C32592E83200FD29FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0E12592F45300FD29FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031EF1032593387700FD29FA /* Roboto-Light.ttf in Resources */,
+				031EF1082593396400FD29FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		031EF0A52592E82C00FD29FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031EF0AF2592E82C00FD29FA /* ContentView.swift in Sources */,
+				031EF0AD2592E82C00FD29FA /* Cleanish_ClockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0B62592E83200FD29FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031EF0BF2592E83200FD29FA /* Cleanish_ClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0C12592E83200FD29FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031EF0CA2592E83200FD29FA /* Cleanish_ClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031EF0DF2592F45300FD29FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031EF0EB2592F45300FD29FA /* CleanishClock_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		031EF0BC2592E83200FD29FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031EF0A82592E82C00FD29FA /* Cleanish Clock */;
+			targetProxy = 031EF0BB2592E83200FD29FA /* PBXContainerItemProxy */;
+		};
+		031EF0C72592E83200FD29FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031EF0A82592E82C00FD29FA /* Cleanish Clock */;
+			targetProxy = 031EF0C62592E83200FD29FA /* PBXContainerItemProxy */;
+		};
+		031EF0F02592F45A00FD29FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031EF0E22592F45300FD29FA /* Cleanish Clock WidgetExtension */;
+			targetProxy = 031EF0EF2592F45A00FD29FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		031EF0CC2592E83200FD29FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		031EF0CD2592E83200FD29FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		031EF0CF2592E83200FD29FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cleanish Clock/Preview Content\"";
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cleanish Clock/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.cleanishclock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031EF0D02592E83200FD29FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cleanish Clock/Preview Content\"";
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cleanish Clock/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.cleanishclock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		031EF0D22592E83200FD29FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				INFOPLIST_FILE = "Cleanish ClockTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.cleanishclock.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cleanish Clock.app/Cleanish Clock";
+			};
+			name = Debug;
+		};
+		031EF0D32592E83200FD29FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				INFOPLIST_FILE = "Cleanish ClockTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.cleanishclock.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cleanish Clock.app/Cleanish Clock";
+			};
+			name = Release;
+		};
+		031EF0D52592E83200FD29FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				INFOPLIST_FILE = "Cleanish ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.cleanishclock.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prominent Clock";
+			};
+			name = Debug;
+		};
+		031EF0D62592E83200FD29FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				INFOPLIST_FILE = "Cleanish ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshmcarthur.cleanishclock.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prominent Clock";
+			};
+			name = Release;
+		};
+		031EF0F32592F45A00FD29FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				INFOPLIST_FILE = "Cleanish Clock Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmcarthur.cleanishclock.clock-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031EF0F42592F45A00FD29FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T86Z8SF4GG;
+				INFOPLIST_FILE = "Cleanish Clock Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmcarthur.cleanishclock.clock-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		031EF0A42592E82B00FD29FA /* Build configuration list for PBXProject "Cleanish Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031EF0CC2592E83200FD29FA /* Debug */,
+				031EF0CD2592E83200FD29FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031EF0CE2592E83200FD29FA /* Build configuration list for PBXNativeTarget "Cleanish Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031EF0CF2592E83200FD29FA /* Debug */,
+				031EF0D02592E83200FD29FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031EF0D12592E83200FD29FA /* Build configuration list for PBXNativeTarget "Cleanish ClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031EF0D22592E83200FD29FA /* Debug */,
+				031EF0D32592E83200FD29FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031EF0D42592E83200FD29FA /* Build configuration list for PBXNativeTarget "Cleanish ClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031EF0D52592E83200FD29FA /* Debug */,
+				031EF0D62592E83200FD29FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031EF0F22592F45A00FD29FA /* Build configuration list for PBXNativeTarget "Cleanish Clock WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031EF0F32592F45A00FD29FA /* Debug */,
+				031EF0F42592F45A00FD29FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 031EF0A12592E82B00FD29FA /* Project object */;
+}
