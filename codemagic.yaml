@@ -7,6 +7,7 @@ workflows:
         triggering:
             events:
                 - push
+                - tag
             branch_patterns:
                 - pattern: main
                   include: true
@@ -27,4 +28,4 @@ workflows:
             github_releases:
                 prerelease: false
                 artifact_patterns:
-                    - '*'
+                    - '*.app'
