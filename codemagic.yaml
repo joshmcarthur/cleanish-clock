@@ -6,7 +6,7 @@ workflows:
         name: iOS App
         environment:
             vars:
-		XCODE_PROJECT: "Cleanish Clock.xcodeproj"
+                XCODE_PROJECT: "Cleanish Clock.xcodeproj"
                 XCODE_SCHEME: "Cleanish Clock"
             xcode: latest
             cocoapods: default
