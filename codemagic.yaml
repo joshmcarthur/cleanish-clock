@@ -20,11 +20,13 @@ workflows:
         scripts:
             - xcodebuild build -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
         artifacts:
+            - build/ios/ipa/*.ipa
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
         publishing:
             github_releases:
                 prerelease: false
                 artifact_patterns:
+                    - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
                     - '*.app'
                     - '*.ipa'
