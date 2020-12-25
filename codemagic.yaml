@@ -3,7 +3,14 @@
 
 workflows:
     ios-app:
-        name: iOS App
+        name: Cleanish Clock
+        triggering:
+            events:
+                - push
+            branch_patterns:
+                - pattern: main
+                include: true
+                source: true
         environment:
             vars:
                 XCODE_PROJECT: "Cleanish Clock.xcodeproj"
