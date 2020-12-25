@@ -1,4 +1,7 @@
 # cleanish-clock
+
+[![Codemagic build status](https://api.codemagic.io/apps/5fe6626515bfd1dbbe13d380/ios-app/status_badge.svg)](https://codemagic.io/apps/5fe6626515bfd1dbbe13d380/ios-app/latest_build)
+
 A clean, no-nonsense clock widget for iOS inspired by the Android launcher clock widget
 
 ### Light mode:
