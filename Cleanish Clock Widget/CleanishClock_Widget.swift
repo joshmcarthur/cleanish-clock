@@ -71,12 +71,13 @@ struct SimpleWidgetEntryView: View {
         ZStack {
             VStack {
                 Text("\(self.getFormattedTime(entry: entry))")
-                    .font(.custom("Roboto Light", size: widgetFamily == .systemMedium ? 68 : 54, relativeTo: .largeTitle))
+                    .font(.system(size: widgetFamily == .systemMedium ? 68 : 54,  weight: .semibold, design: .rounded))
                     .tracking(-1.5)
-                    .foregroundColor(Color("PrimaryClockColor"))
+                    .frame(maxWidth: .infinity, alignment: self.widgetFamily == .systemMedium ? .center : .leading)
+                    .foregroundColor(Color(UIColor.label))
                 Text("\(self.getFormattedDate(entry: entry))")
-                    .font(.custom("Roboto Light", size: widgetFamily == .systemMedium ? 24: 18, relativeTo: .title))
-                    .foregroundColor(Color("SecondaryClockColor"))
+                    .font(.system(size: widgetFamily == .systemMedium ? 24 : 18, weight: .regular))
+                    .foregroundColor(Color(UIColor.secondaryLabel))
             }.padding(self.padding)
         }
         .frame(minWidth: 0,

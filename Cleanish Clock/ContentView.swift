@@ -22,8 +22,8 @@ struct ContentView: View {
                 .onReceive(timer) { input in
                     self.formattedTime = self.dateFormatter.string(from: input)
                 }
-                .font(.custom("Roboto Light", size: 96))
-                .foregroundColor(Color("PrimaryClockColor"))
+                .font(.system(size: 96,  weight: .semibold, design: .rounded))
+                .foregroundColor(Color(UIColor.label))
                 .padding()
         }
         .frame(minWidth: 0,
