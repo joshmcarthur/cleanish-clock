@@ -43,8 +43,6 @@ struct SimpleWidgetEntryView: View {
     var entry: Provider.Entry
     @Environment(\.widgetFamily) private var widgetFamily
     
-    var padding = 16.0
-    
     static let timeFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "H:mm"
@@ -78,7 +76,7 @@ struct SimpleWidgetEntryView: View {
                 Text("\(self.getFormattedDate(entry: entry))")
                     .font(.system(size: widgetFamily == .systemMedium ? 24 : 18, weight: .regular))
                     .foregroundColor(Color(UIColor.secondaryLabel))
-            }.padding(self.padding)
+            }.padding(widgetFamily == .systemMedium ? 16 : 0)
         }
         .frame(minWidth: 0,
                maxWidth: .infinity,
