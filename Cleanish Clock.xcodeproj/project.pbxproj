@@ -13,12 +13,10 @@
 		031EF0B42592E83100FD29FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0B32592E83100FD29FA /* Preview Assets.xcassets */; };
 		031EF0BF2592E83200FD29FA /* Cleanish_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0BE2592E83200FD29FA /* Cleanish_ClockTests.swift */; };
 		031EF0CA2592E83200FD29FA /* Cleanish_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0C92592E83200FD29FA /* Cleanish_ClockUITests.swift */; };
-		031EF0DB2592E84C00FD29FA /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */; };
 		031EF0E62592F45300FD29FA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EF0E52592F45300FD29FA /* WidgetKit.framework */; };
 		031EF0E82592F45300FD29FA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EF0E72592F45300FD29FA /* SwiftUI.framework */; };
 		031EF0EB2592F45300FD29FA /* CleanishClock_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031EF0EA2592F45300FD29FA /* CleanishClock_Widget.swift */; };
 		031EF0F12592F45A00FD29FA /* Cleanish Clock WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 031EF0E32592F45300FD29FA /* Cleanish Clock WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		031EF1032593387700FD29FA /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */; };
 		031EF1082593396400FD29FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031EF0B02592E83100FD29FA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +71,6 @@
 		031EF0C52592E83200FD29FA /* Cleanish ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cleanish ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		031EF0C92592E83200FD29FA /* Cleanish_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleanish_ClockUITests.swift; sourceTree = "<group>"; };
 		031EF0CB2592E83200FD29FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		031EF0E32592F45300FD29FA /* Cleanish Clock WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cleanish Clock WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		031EF0E52592F45300FD29FA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		031EF0E72592F45300FD29FA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -141,7 +138,6 @@
 		031EF0AB2592E82C00FD29FA /* Cleanish Clock */ = {
 			isa = PBXGroup;
 			children = (
-				031EF0DA2592E84B00FD29FA /* Roboto-Light.ttf */,
 				031EF0AC2592E82C00FD29FA /* Cleanish_ClockApp.swift */,
 				031EF0AE2592E82C00FD29FA /* ContentView.swift */,
 				031EF0B02592E83100FD29FA /* Assets.xcassets */,
@@ -323,7 +319,6 @@
 			files = (
 				031EF0B42592E83100FD29FA /* Preview Assets.xcassets in Resources */,
 				031EF0B12592E83100FD29FA /* Assets.xcassets in Resources */,
-				031EF0DB2592E84C00FD29FA /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +340,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031EF1032593387700FD29FA /* Roboto-Light.ttf in Resources */,
 				031EF1082593396400FD29FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T86Z8SF4GG;
 				INFOPLIST_FILE = "Cleanish Clock Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,6 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T86Z8SF4GG;
 				INFOPLIST_FILE = "Cleanish Clock Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
