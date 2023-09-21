@@ -12,24 +12,24 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date())
     }
-
+    
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date())
         completion(entry)
     }
-
-
+    
+    
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
         var entries = [SimpleEntry]()
         let currentDate = Date()
         let midnight = Calendar.current.startOfDay(for: currentDate)
         let nextMidnight = Calendar.current.date(byAdding: .day, value: 1, to: midnight)!
-
+        
         for offset in 0 ..< 60 * 24 {
             let entryDate = Calendar.current.date(byAdding: .minute, value: offset, to: midnight)!
             entries.append(SimpleEntry(date: entryDate))
         }
-
+        
         let timeline = Timeline(entries: entries, policy: .after(nextMidnight))
         completion(timeline)
     }
@@ -42,7 +42,9 @@ struct SimpleEntry: TimelineEntry {
 struct SimpleWidgetEntryView: View {
     var entry: Provider.Entry
     @Environment(\.widgetFamily) private var widgetFamily
-        
+    
+    var padding = 16.0
+    
     static let timeFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "H:mm"
@@ -64,24 +66,24 @@ struct SimpleWidgetEntryView: View {
         return Self.dateFormatter.string(from: entry.date)
     }
     
-
+    
     var body: some View {
         ZStack {
             VStack {
-            Text("\(self.getFormattedTime(entry: entry))")
-                .font(.custom("Roboto Light", size: 68.0, relativeTo: .largeTitle))
-                .tracking(-1.5)
-                .foregroundColor(Color("PrimaryClockColor"))
-            Text("\(self.getFormattedDate(entry: entry))")
-                .font(.custom("Roboto Light", size: 24.0, relativeTo: .title))
-                .foregroundColor(Color("SecondaryClockColor"))
-            }
+                Text("\(self.getFormattedTime(entry: entry))")
+                    .font(.custom("Roboto Light", size: widgetFamily == .systemMedium ? 68 : 54, relativeTo: .largeTitle))
+                    .tracking(-1.5)
+                    .foregroundColor(Color("PrimaryClockColor"))
+                Text("\(self.getFormattedDate(entry: entry))")
+                    .font(.custom("Roboto Light", size: widgetFamily == .systemMedium ? 24: 18, relativeTo: .title))
+                    .foregroundColor(Color("SecondaryClockColor"))
+            }.padding(self.padding)
         }
         .frame(minWidth: 0,
-                   maxWidth: .infinity,
-                   minHeight: 0,
-                   maxHeight: .infinity,
-                   alignment: .center)
+               maxWidth: .infinity,
+               minHeight: 0,
+               maxHeight: .infinity,
+               alignment: self.widgetFamily == .systemMedium ? .center : .leading)
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
@@ -89,7 +91,7 @@ struct SimpleWidgetEntryView: View {
 @main
 struct Cleanish_Clock_Widget: Widget {
     let kind: String = "Cleanish_Clock_Widget"
-
+    
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             SimpleWidgetEntryView(entry: entry)
@@ -107,7 +109,7 @@ struct Cleanish_Clock_Widget_Previews: PreviewProvider {
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
             SimpleWidgetEntryView(entry: SimpleEntry(date: Date()))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-         
+            
         }
     }
 }
