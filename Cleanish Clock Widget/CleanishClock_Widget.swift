@@ -94,7 +94,7 @@ struct Cleanish_Clock_Widget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             SimpleWidgetEntryView(entry: entry)
         }
-        .supportedFamilies([.systemMedium])
+        .supportedFamilies([.systemMedium, .systemSmall])
         .configurationDisplayName(" ")
         .description("Cleanish digital clock inspired by Android")
     }
@@ -103,13 +103,10 @@ struct Cleanish_Clock_Widget: Widget {
 struct Cleanish_Clock_Widget_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-         
-        SimpleWidgetEntryView(entry: SimpleEntry(date: Date()))
-            .environment(\.colorScheme, .dark)
-            .previewContext(WidgetPreviewContext(family: .systemMedium))
             SimpleWidgetEntryView(entry: SimpleEntry(date: Date()))
-                .environment(\.colorScheme, .light)
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
+            SimpleWidgetEntryView(entry: SimpleEntry(date: Date()))
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
          
         }
     }
