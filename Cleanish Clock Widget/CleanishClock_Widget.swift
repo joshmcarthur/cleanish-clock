@@ -84,6 +84,9 @@ struct SimpleWidgetEntryView: View {
                maxHeight: .infinity,
                alignment: self.widgetFamily == .systemMedium ? .center : .leading)
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .containerBackground(for: .widget) {
+            Color(UIColor.systemBackground)
+        }
     }
 }
 
