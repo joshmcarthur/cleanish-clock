@@ -31,7 +31,7 @@ struct ContentView: View {
                    minHeight: 0,
                    maxHeight: .infinity,
                    alignment: .center)
-        .background(Color("BackgroundColor")).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 
