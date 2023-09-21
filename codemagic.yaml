@@ -24,8 +24,3 @@ workflows:
             - build/ios/ipa/*.ipa
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
-        publishing:
-            github_releases:
-                prerelease: false
-                artifact_patterns:
-                    - '*.app'
