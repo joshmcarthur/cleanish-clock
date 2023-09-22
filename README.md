@@ -6,15 +6,19 @@ A clean, no-nonsense clock widget for iOS inspired by the Android launcher clock
 
 ### Light mode:
 
-![Cleanish Clock widget on iPhone 14 simulator, light mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/light.png)
+![Cleanish Clock widget on iPhone 15 simulator, light mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/light.png)
 
-![Cleanish Clock small widget on iPhone 14 simulator, light mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/light-small.png)
+![Cleanish Clock small widget on iPhone 15 simulator, light mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/light-small.png)
 
 ### Dark mode:
 
-![Cleanish Clock widget on iPhone 11 simulator, dark mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/dark.png)
+![Cleanish Clock widget on iPhone 15 simulator, dark mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/dark.png)
 
-![Cleanish Clock small widget on iPhone 14 simulator, dark mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/dark-small.png)
+![Cleanish Clock small widget on iPhone 15 simulator, dark mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/dark-small.png)
+
+### Standby mode (iOS 17.0+)
+
+![Cleanish Clock on iPhone 15 simulator, standby mode](https://github.com/joshmcarthur/cleanish-clock/raw/main/screenshots/standby.png)
 
 ### FAQ
 
