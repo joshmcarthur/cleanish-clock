@@ -69,20 +69,20 @@ struct SimpleWidgetEntryView: View {
         ZStack {
             VStack {
                 Text("\(self.getFormattedTime(entry: entry))")
-                    .font(.system(size: widgetFamily == .systemMedium ? 68 : 54,  weight: .semibold, design: .rounded))
+                    .font(.system(size: widgetFamily == .systemSmall ? 48 : 68,  weight: .semibold, design: .rounded))
                     .tracking(-1.5)
-                    .frame(maxWidth: .infinity, alignment: self.widgetFamily == .systemMedium ? .center : .leading)
+                    .frame(maxWidth: .infinity, alignment: self.widgetFamily == .systemSmall ? .leading : .center)
                     .foregroundColor(Color(UIColor.label))
                 Text("\(self.getFormattedDate(entry: entry))")
-                    .font(.system(size: widgetFamily == .systemMedium ? 24 : 18, weight: .regular))
+                    .font(.system(size: widgetFamily == .systemSmall ? 18 : 24, weight: .regular))
                     .foregroundColor(Color(UIColor.secondaryLabel))
-            }.padding(widgetFamily == .systemMedium ? 16 : 0)
+            }.padding(widgetFamily == .systemSmall ? 0 : 16)
         }
         .frame(minWidth: 0,
                maxWidth: .infinity,
                minHeight: 0,
                maxHeight: .infinity,
-               alignment: self.widgetFamily == .systemMedium ? .center : .leading)
+               alignment: self.widgetFamily == .systemSmall ? .leading : .center)
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .containerBackground(for: .widget) {
             Color(UIColor.systemBackground)
